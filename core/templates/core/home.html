@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/krjani.jpeg' %}"
+      alt="janis pic"
+      class="img-thumbnail"
+      width="180px"
+    />
+  </div>
+  <div class="mt-5 mx-5 text-white" style="text-align: justify">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 100px">
+        I am <b class="text-warning">Kishan Jani</b> having 5 years of
+        full-stack web development experience for global businesses, I offer the
+        technical expertise you are seeking for your web developer position.
+      </p>
+      <p>
+        Since earning my bachelor's degree in internet and web development from
+        GEC Gandhinagar,sector28, I have Served as a web developer at
+        <b class="text-warning">krTechno</b>, one of biggest premier digital
+        marketing and web development firm. In this position, I have led web
+        development projects for clients in diverse industries including
+        technology, manufacturing, pharmaceutical, hospitality, retail and
+        financial services
+      </p>
+      <p>
+        Seeking a position as an administrative assistant at Acme Inc., to
+        leverage organizational and research skills to support internal and
+        external communication & To obtain a position in a well organized
+        company, where my knowledge can be utilized and as well as enhanced.
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="mx-5 btn btn-outline-warning my-3"
+      >Hire me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
+{% endblock content %}
